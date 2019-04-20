@@ -43,14 +43,14 @@ Invoke-Command -ComputerName $s -FilePath "c:\Programme\winlogbeat\uninstall-ser
 $logger = "Dienst deinstalliert"
 $logger
 
-# Ordner löschen
+# Ordner lÃ¶schen
 Invoke-Command {Remove-Item -Path "C:\Programme\winlogbeat\" -Force -Recurse} -ComputerName $s
-$logger = "Ordner gelöscht"
+$logger = "Ordner gelÃ¶scht"
 $logger
 
 $logger = "Ordner zum Server kopieren"
 $logger
-# Update Ordner einfügen
+# Update Ordner einfÃ¼gen
 Copy-Item $pathwinlogbeat -Destination "C:\Programme\winlogbeat" -ToSession $session -Recurse
 
 
