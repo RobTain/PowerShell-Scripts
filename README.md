@@ -1,5 +1,4 @@
 # PowerShell-Scripts
-Scripts I Wrote For Senacor Technologies
 
 ### IPRange
 Scan certain IP Areas and check ARP Entry
