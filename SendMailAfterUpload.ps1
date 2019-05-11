@@ -20,7 +20,7 @@ foreach($line in $log) {
     $line = $line.Split("\")[-1]
     # send mail
     $Subject = "Plex ADD: " + $line   
-    $Body = "Dies ist eine automatisch generierte Mail von Robsoft.\nAktion: $Subject \nSkynet - die freundliche KI aus der Nachbar$"
+    $Body = "Dies ist eine automatisch generierte Mail von Robsoft.`r`nAktion: $Subject `r`nSkynet - die freundliche KI aus der Nachbarschaft"
     $SMTPClient.Send($EmailFrom, $reciever1, $Subject, $Body)
     $SMTPClient.Send($EmailFrom, $reciever2, $Subject, $Body)
     $SMTPClient.Send($EmailFrom, $reciever3, $Subject, $Body)
